@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/danielhusar/window-popup",
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "sinon": "^1.12.2"
   }
 }

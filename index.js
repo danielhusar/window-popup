@@ -1,16 +1,6 @@
 'use strict';
 
-var root;
-
-if (module && module.exports) {
-  root = module.exports;
-} else if (jQuery) {
-  root = jQuery;
-} else {
-  root = window;
-}
-
-root.windowPopup = function (width, height, url, title, win) {
+function windowPopup (width, height, url, title, win) {
 
   if (typeof width !== 'number' || typeof height !== 'number') {
     throw new TypeError('Width and hegiht must be numbers');
@@ -33,3 +23,14 @@ root.windowPopup = function (width, height, url, title, win) {
   win.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
 
 };
+
+var root;
+if (typeof exports === 'object') {
+  root = exports;
+} else if (typeof jQuery === 'function') {
+  root = jQuery;
+} else {
+  root = this;
+}
+
+root.windowPopup = windowPopup;
