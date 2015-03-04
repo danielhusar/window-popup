@@ -4,15 +4,15 @@
   function windowPopup (width, height, url, title, win) {
 
     if (typeof width !== 'number' || typeof height !== 'number') {
-      throw new TypeError('Width and hegiht must be numbers');
+      throw new TypeError('Width and height must be numbers');
     }
 
     if (typeof url !== 'string') {
-      throw new TypeError('url must be string');
+      throw new TypeError('Url must be string');
     }
 
     if ( (typeof title !== 'string') && (typeof title !== 'undefined') ) {
-      throw new TypeError('Title must be strinf');
+      throw new TypeError('Title must be string');
     }
 
     win = win || window;
