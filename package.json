@@ -1,6 +1,6 @@
 {
   "name": "window-popup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open window popup centered in the current browser window",
   "main": "index.js",
   "scripts": {
