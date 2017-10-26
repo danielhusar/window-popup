@@ -21,8 +21,7 @@
     var left = (win.outerWidth / 2) + (win.screenX || win.screenLeft || 0) - (width / 2);
     var top = (win.outerHeight / 2) + (win.screenY || win.screenTop || 0) - (height / 2);
 
-    win.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
-
+    return win.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
   }
 
   var root;
